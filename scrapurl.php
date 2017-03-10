@@ -26,7 +26,7 @@ for($i=1;$i<=578;$i++){
 	curl_setopt($ch, CURLOPT_PROXY, $proxy);
 	curl_setopt($ch, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
 	//Definimos la URL donde realizar SCRAPING
-	curl_setopt($ch,CURLOPT_URL,'http://www.infocif.es/ranking/ventas-empresas/espana?pagina='.$i); 
+	curl_setopt($ch,CURLOPT_URL,'http://www.dominio.es/ranking/ventas-empresas/espana?pagina='.$i); 
 	//Seleccionamos un user-agent cambiante
 	curl_setopt($ch,CURLOPT_USERAGENT,rotarUser());
 	//Definimos la cabecera de la petición, en este caso el lenguaje
